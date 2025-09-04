@@ -1,0 +1,143 @@
+/* Start Variables */
+
+/* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Global Rules */
+/* Start Header */
+.header {
+    padding: 20px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    width: 60px;
+}
+
+.header .links {
+    position: relative;
+
+}
+
+.header .links:hover .icon span:nth-child(2) {
+    width: 100%;
+}
+
+.header .links:hover ul {
+    display: initial;
+}
+
+.header .links .icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 30px;
+    row-gap: 5px;
+}
+
+.header .links .icon span {
+    height: 2px;
+    width: 100%;
+    background-color: #333;
+
+}
+
+.header .links .icon span:nth-child(2) {
+    width: 60%;
+    transition: 0.5s;
+}
+
+.header .links .icon span:last-child {
+    height: 3px;
+}
+
+.header .links ul {
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+    min-width: 200px;
+    background: #F6F6F6;
+    top: calc(100% + 15px);
+    right: 0;
+    display: none;
+    z-index: 1;
+}
+
+.header .links ul::before {
+    content: "";
+    position: absolute;
+    border: 10px solid;
+    border-color: transparent transparent #F6F6F6 transparent;
+    right: 5px;
+    transform: translateY(-100%);
+
+}
+
+.header .links ul a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    color: #333;
+    transition: 0.5s;
+}
+
+.header .links ul a:hover {
+    padding-left: 20px;
+}
+
+.header .links ul li:not(:last-child) a {
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+
+
+
+
+
+
+/* End Header */
