@@ -2,6 +2,8 @@
 :root {
     --main-color: #10CAB7;
     --secondary-color: #2C4755;
+    --section-padding: 60px;
+    --section-background: #F6F6F6;
 }
 
 /* #endregion */
@@ -49,7 +51,7 @@ body {
 
 /* #region Components */
 .special-heading {
-    color: #EBECED;
+    color: #d3d3d3;
     font-size: 100px;
     text-align: center;
     margin: 0;
@@ -171,6 +173,7 @@ body {
 /* #endregion */
 
 /* #region Landing Section */
+
 .landing {
     background-image: url(../images/landing.jpg);
     height: calc(100vh - 64px);
@@ -203,9 +206,10 @@ body {
 /* #endregion */
 
 /* #region Features */
+
 .features {
-    background-color: #F6F6F6;
-    padding: 60px 0;
+    background-color: var(--section-background);
+    padding: var(--section-padding) 0;
 }
 
 .features .container {
@@ -240,9 +244,9 @@ body {
 /* #endregion */
 
 /* #region Services */
+
 .services {
-    padding: 60px 0;
-    height: 100vh;
+    padding: var(--section-padding) 0;
 }
 
 .services .services-content {
@@ -253,18 +257,15 @@ body {
     margin-top: 100px;
 }
 
-
-
 .services .services-content .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 30px
 }
 
-
-
 .services .services-content .services-grid .srv {
     display: flex;
+    margin-bottom: 30px;
 }
 
 @media (max-width: 767px) {
@@ -322,12 +323,49 @@ body {
     position: absolute;
     background-color: var(--secondary-color);
     width: 100px;
-    height: calc(100% + 100px);
-    top: 50%;
+    height: calc(100% + 50px);
+    top: 0;
     right: 0;
-    transform: translate(0, -50%);
+    transform: translate(0, -46px);
     z-index: -1;
 }
 
+/* #endregion */
+
+/* #region Portfolio */
+
+.portfolio {
+    background-color: var(--section-background);
+    padding: var(--section-padding) 0;
+}
+
+.portfolio .portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+    margin-top: 80px;
+}
+
+.portfolio .portfolio-content .card {
+    background-color: #FFF;
+}
+
+
+.portfolio .portfolio-content .card img {
+    max-width: 100%;
+}
+
+.portfolio .portfolio-content .card .info {
+    padding: 20px;
+}
+
+.portfolio .portfolio-content .card .info h3 {
+    margin: 0;
+}
+
+.portfolio .portfolio-content .card .info p {
+    color: #777;
+    line-height: 1.6;
+}
 
 /* #endregion */
