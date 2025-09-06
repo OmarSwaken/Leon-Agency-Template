@@ -8,12 +8,13 @@
     --section-padding: 40px;
     --section-background: #F6F6F6;
 
-    --content-margin-top: 100px;
+    --content-margin-top: 90px;
 }
 
 /* #endregion */
 
 /* #region Global Rules */
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -215,7 +216,8 @@ body {
 
 .features {
     background-color: var(--section-background);
-    padding: var(--section-padding) 0;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
 }
 
 .features .container {
@@ -252,7 +254,8 @@ body {
 /* #region Services */
 
 .services {
-    padding: var(--section-padding) 0;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
 }
 
 .services .services-content {
@@ -342,7 +345,8 @@ body {
 
 .portfolio {
     background-color: var(--section-background);
-    padding: var(--section-padding) 0;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
 }
 
 .portfolio .portfolio-content {
@@ -408,7 +412,6 @@ body {
         text-align: center;
     }
 
-    
 
 }
 
@@ -463,6 +466,61 @@ body {
     width: 50%;
     border-color: var(--primary-color);
     display: inline-block;
+}
+
+/* #endregion */
+
+/* #region Portfolio */
+
+.contact {
+    background-color: var(--section-background);
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.contact .contact-content {
+
+    display: grid;
+    margin-top: var(--content-margin-top);
+    margin-bottom: var(--section-padding);
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.contact .contact-content .label {
+    font-size: 35px;
+    color: var(--secondary-color);
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin: 0;
+}
+
+.contact .contact-content .link {
+    text-decoration: none;
+    display: block;
+    color: var(--primary-color);
+    font-size: 35px;
+    font-weight: 800;
+}
+
+@media (max-width: 768px) {
+    .contact .contact-content .label,
+    .contact .contact-content .link {
+        font-size: 25px;
+    }
+}
+
+.contact .contact-content .social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+
+}
+
+.contact .contact-content .social i {
+    color: var(--secondary-color);
 }
 
 /* #endregion */
