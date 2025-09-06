@@ -505,6 +505,7 @@ body {
 }
 
 @media (max-width: 768px) {
+
     .contact .contact-content .label,
     .contact .contact-content .link {
         font-size: 25px;
@@ -521,6 +522,22 @@ body {
 
 .contact .contact-content .social i {
     color: var(--secondary-color);
+}
+
+/* #endregion */
+
+/* #region Footer */
+.footer {
+    color: #FFF;
+    padding: 30px 10px;
+    text-align: center;
+    background-color: var(--secondary-color);
+    font-size: 18px;
+}
+
+.footer span {
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
 /* #endregion */
